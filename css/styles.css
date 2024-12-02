@@ -1,0 +1,127 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    align-items: center;
+    background-color: #333;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar h1 {
+    margin: 0;
+    padding-right: 2rem; /* Add some space between the title and the nav links */
+}
+
+.navbar nav {
+    display: flex;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+}
+
+main {
+    margin-top: 70px; /* Adjust this value if the navbar height changes */
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.05);
+}
+
+.container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.container h2:hover {
+    color: #6a11cb;
+}
+
+.container input[type="text"],
+.container input[type="email"],
+.container input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container input[type="text"]:hover,
+.container input[type="email"]:hover,
+.container input[type="password"]:hover {
+    border-color: #6a11cb;
+    box-shadow: 0 0 5px rgba(0, 94, 50, 0.5);
+}
+
+.container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #6a11cb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.container button:hover {
+    background-color: #2575fc;
+}
+
+.container .links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container .links a {
+    color: #2575fc;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.container .links a:hover {
+    color: #6a11cb;
+    text-decoration: underline;
+}
+
+.container .error {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
